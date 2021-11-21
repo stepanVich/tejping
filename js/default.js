@@ -47,6 +47,7 @@ $(document).ready( function() {
 	$('.tween').each(function(i ,el) {
 		controller.addTween($(this), TweenMax.to($(this), 1.5, {css:{opacity: 1, left: 0, top: 0}, ease: Power2.easeOut, y: 0, onComplete: function() {$(this.target).addClass('tweened');}} ), 1, -winHeight);
 	});
+
 });
 
 $(window).resize(function() {
